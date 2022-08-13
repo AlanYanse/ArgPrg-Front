@@ -1,0 +1,14 @@
+header{
+    background-color: #a1b5cb;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+app-logo-ap{
+    margin-right: auto;
+}
+
+app-social-media {
+    margin-right: 10px;
+}

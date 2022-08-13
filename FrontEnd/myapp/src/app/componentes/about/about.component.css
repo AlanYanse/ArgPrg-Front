@@ -1,0 +1,12 @@
+.row{
+    padding: 10px;
+    text-align: center;
+}
+
+/* etiqueta nombre */
+
+#name{
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 5px;
+}
