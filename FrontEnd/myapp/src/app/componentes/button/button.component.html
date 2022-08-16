@@ -1,2 +1,7 @@
-<button type="button" class="btn" (click)="login()" *ngIf="!isLogged">Ingresar</button>
-<button type="button" class="btn" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
+
+<div class="row">
+    <div class="container">
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
+    </div>
+</div>

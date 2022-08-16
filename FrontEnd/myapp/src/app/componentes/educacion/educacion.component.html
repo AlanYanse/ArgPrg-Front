@@ -16,10 +16,10 @@
                     </td>
                     <td>{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
-                        <button routerLink="/editedu/{{Educacion.id}}">Editar</button>
+                        <button routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i>Editar</button>
                     </td>
                     <td *ngIf="isLogged">
-                        <button id="btn-borrar" (click)="onDelete(Educacion.id)">Eliminar</button>
+                        <button id="btn-borrar" (click)="onDelete(Educacion.id)"><i class="bi bi-x"></i>Eliminar</button>
                     </td>
                 </tr>
             </tbody>

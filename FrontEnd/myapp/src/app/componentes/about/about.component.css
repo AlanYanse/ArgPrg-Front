@@ -6,7 +6,8 @@
 /* etiqueta nombre */
 
 #name{
-    font-weight: bolder;
+    font-weight: lighter;
     font-size: large;
     margin-bottom: 5px;
+    color: black;
 }
