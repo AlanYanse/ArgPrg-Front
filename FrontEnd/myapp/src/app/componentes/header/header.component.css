@@ -52,12 +52,12 @@ img{
 
 */
 
-.container{
+.contenedor{
     width: 100%;
     background-color: #a1b5cb;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
