@@ -1,0 +1,43 @@
+/*--- Efecto hover diverido ---*/
+
+a{
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    transition: all .4s ease;
+  }
+  
+  a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    box-sizing: border-box;
+    height: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: all .8s ease;
+  }
+  
+  a:hover::after,
+  a:hover::before{
+  
+    border-color: #fefefe;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*--- Fin del Efecto ---*/
