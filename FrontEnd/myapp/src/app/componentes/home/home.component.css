@@ -1,4 +1,4 @@
-
+/*
 #visor{
     display: flex;
     height: 610px;
@@ -15,4 +15,10 @@ app-banner{
 
 app-sidenav{
     background-color: #212529;
+}
+
+*/
+
+app-about{
+    text-align: center;
 }

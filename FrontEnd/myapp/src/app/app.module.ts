@@ -28,6 +28,7 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { SidenavComponent } from './componentes/sidenav/sidenav.component';
+import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
 
 
 
@@ -50,7 +51,7 @@ import { SidenavComponent } from './componentes/sidenav/sidenav.component';
     SkillsComponent, 
     ProyectosComponent, 
     HomeComponent, 
-    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent, SidenavComponent // Lo registró automáticamente vsc
+    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent, SidenavComponent, MenuBarComponent // Lo registró automáticamente vsc
     
   ],
   imports: [

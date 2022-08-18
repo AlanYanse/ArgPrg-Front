@@ -1,7 +1,7 @@
 
 
-<app-about></app-about>
-<app-experiencia></app-experiencia>
-<app-educacion></app-educacion>
+<app-about *ngIf="!flag"></app-about>
+<app-experiencia *ngIf="flag"></app-experiencia>
+<app-educacion *ngIf="flag"></app-educacion>
 
 
