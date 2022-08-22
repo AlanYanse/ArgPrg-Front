@@ -15,7 +15,7 @@ import { SocialMediaComponent } from './componentes/social-media/social-media.co
 import { BannerComponent } from './componentes/banner/banner.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
+import { SkillComponent } from './componentes/skill/skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HomeComponent } from './componentes/home/home.component';
@@ -29,6 +29,8 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { SidenavComponent } from './componentes/sidenav/sidenav.component';
 import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
+import { NewSkillComponent } from './componentes/skill/new-skill.component';
+import { EditSkillComponent } from './componentes/skill/edit-skill.component';
 
 
 
@@ -48,10 +50,10 @@ import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
     BannerComponent, 
     ExperienciaComponent, 
     EducacionComponent, 
-    SkillsComponent, 
+    SkillComponent, 
     ProyectosComponent, 
     HomeComponent, 
-    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent, SidenavComponent, MenuBarComponent // Lo registró automáticamente vsc
+    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent, SidenavComponent, MenuBarComponent, NewSkillComponent, EditSkillComponent // Lo registró automáticamente vsc
     
   ],
   imports: [
