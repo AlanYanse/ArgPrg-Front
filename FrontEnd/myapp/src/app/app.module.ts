@@ -17,7 +17,6 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillComponent } from './componentes/skill/skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +30,9 @@ import { SidenavComponent } from './componentes/sidenav/sidenav.component';
 import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
 import { NewSkillComponent } from './componentes/skill/new-skill.component';
 import { EditSkillComponent } from './componentes/skill/edit-skill.component';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.component';
 
 
 
@@ -50,10 +52,20 @@ import { EditSkillComponent } from './componentes/skill/edit-skill.component';
     BannerComponent, 
     ExperienciaComponent, 
     EducacionComponent, 
-    SkillComponent, 
-    ProyectosComponent, 
+    SkillComponent,  
     HomeComponent, 
-    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent, SidenavComponent, MenuBarComponent, NewSkillComponent, EditSkillComponent // Lo registró automáticamente vsc
+    LoginComponent, 
+    NewExperienciaComponent, 
+    EditExperienciaComponent, 
+    NewEducacionComponent, 
+    EditEducacionComponent, 
+    SidenavComponent, 
+    MenuBarComponent, 
+    NewSkillComponent, 
+    EditSkillComponent, 
+    ProyectoComponent, 
+    NewProyectoComponent, 
+    EditProyectoComponent // Lo registró automáticamente vsc
     
   ],
   imports: [
