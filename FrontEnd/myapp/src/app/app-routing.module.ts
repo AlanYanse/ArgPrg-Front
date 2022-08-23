@@ -15,6 +15,7 @@ import { EditSkillComponent } from './componentes/skill/edit-skill.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.component';
+import { FormContactComponent } from './componentes/form-contact/form-contact.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,9 @@ const routes: Routes = [
   {path: "editskill/:id", component: EditSkillComponent},
   {path:"proyectos", component: ProyectoComponent},
   {path: "nuevoproyecto", component: NewProyectoComponent},
-  {path: "editproyecto/:id", component: EditProyectoComponent}
+  {path: "editproyecto/:id", component: EditProyectoComponent},
+  {path: "contacto", component: FormContactComponent}
+   
    
 ];
 

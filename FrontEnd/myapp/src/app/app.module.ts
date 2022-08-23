@@ -33,6 +33,7 @@ import { EditSkillComponent } from './componentes/skill/edit-skill.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.component';
+import { FormContactComponent } from './componentes/form-contact/form-contact.component';
 
 
 
@@ -65,7 +66,7 @@ import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.comp
     EditSkillComponent, 
     ProyectoComponent, 
     NewProyectoComponent, 
-    EditProyectoComponent // Lo registró automáticamente vsc
+    EditProyectoComponent, FormContactComponent // Lo registró automáticamente vsc
     
   ],
   imports: [
