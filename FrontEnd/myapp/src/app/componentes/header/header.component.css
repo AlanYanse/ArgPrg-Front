@@ -71,6 +71,7 @@ app-button{
 */
 
 .cajita1{
+    /*width: 100%;*/
     background-color: #a1b5cb;
 }
 
@@ -86,6 +87,7 @@ app-button{
 app-button{
     margin-right: 20px;
 }
+
 
 
 
