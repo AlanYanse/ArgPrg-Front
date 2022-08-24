@@ -50,7 +50,7 @@ img{
     }
 }
 
-*/
+
 
 .contenedor{
     width: 100%;
@@ -67,5 +67,27 @@ app-logo-ap{
 app-button{
     margin-right: 20px;
 }
+
+*/
+
+.cajita1{
+    /*width: 100%;*/
+    background-color: #a1b5cb;
+}
+
+
+.cajita2{
+    width: 100%;
+    background-color: #a1b5cb;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+app-button{
+    margin-right: 20px;
+}
+
+
 
 
