@@ -1,4 +1,4 @@
-
+<!--
 <h1>Experiencia laboral</h1>
 <div>
     <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
@@ -17,4 +17,40 @@
     </tr>
         
 </table>
+
+-->
+
+<div class="container mt-4">
+    <h2>Experiencia Laboral</h2>
+    <br/>
+               
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Empresa</th>
+          <th>Descripción</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td>{{Experiencia.nombreE}}</td>
+          <td>{{Experiencia.descripcionE}}</td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i></button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="onDelete(Experiencia.id)"><i class="bi bi-x"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br/>
+    <div>
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
+    </div>
+    
+  </div>
 

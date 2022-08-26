@@ -21,17 +21,17 @@ export class EditSkillComponent implements OnInit {
       this.skill = data;
     }, err =>{
       alert("Error al modificar la Habilidad");
-      this.router.navigate([""]);
+      this.router.navigate(["skills"]);
     })
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params["id"];
     this.sSkillService.update(id, this.skill).subscribe(data =>{
-      this.router.navigate([""]);
+      this.router.navigate(["skills"]);
     }, err =>{
       alert("Error al modificar la habilidad");
-      this.router.navigate([""]);
+      this.router.navigate(["skills"]);
     })
   }
 

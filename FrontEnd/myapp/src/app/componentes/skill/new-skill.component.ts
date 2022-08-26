@@ -24,10 +24,10 @@ export class NewSkillComponent implements OnInit {
     const skillsLista = new Skill(this.nombreSkill, this.descripcionSkill, this.img, this.percent);
     this.sSkillService.save(skillsLista).subscribe(data =>{
       alert("Habilidad añadida");
-      this.router.navigate([""]);
+      this.router.navigate(["skills"]);
     }, err =>{
       alert("Falló");
-      this.router.navigate([""]);
+      this.router.navigate(["skills"]);
     })
   }
 
