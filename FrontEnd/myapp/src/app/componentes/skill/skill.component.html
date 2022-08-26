@@ -1,129 +1,6 @@
 
+
 <!--
-<div class="circles">
-    <h2>Habilidades</h2>
-    <div class="circulitos">
-
-        <div class="">
-            <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-    </div>
-
-    <div class="">
-        
-        <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-    </div>
-
-    <div class="">
-        
-        <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-    </div>
-
-    <div class="">
-        
-        <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-    </div>
-
-    <div class="">
-        
-        <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-    </div>
-
-    <div class="">
-        
-        <circle-progress
-        [imageSrc]="'../../../assets/java1.png'"
-        [showImage]="true"
-        [imageHeight]="105"
-        [imageWidth]="105"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'orange'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        ></circle-progress>
-
-        </div>
-        
-        
-
-    </div>
-   
-</div>
-
--->
 
 <h1>Habilidades</h1>
 <div>
@@ -162,3 +39,147 @@
     </tr>
         
 </table>
+
+
+
+<div class="container mt-4">
+    <h2>Habilidades</h2>
+    <br/>
+               
+    <table class="table-borderless">
+      <tbody>
+        <tr *ngFor="let Skill of skillsLista">
+            <td><h3>{{Skill.nombreSkill}}</h3></td>
+            <td><p>{{Skill.descripcionSkill}}</p></td>
+            <td>
+                <circle-progress
+                imageSrc= "{{Skill.img}}"
+                [showImage]="true"
+                [imageHeight]="105"
+                [imageWidth]="105"
+                [percent]= "Skill.percent"
+                [radius]="100"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'orange'"
+                [innerStrokeColor]="'#C7E596'"
+                [animation]="true"
+                [animationDuration]="600"
+            ></circle-progress>
+            
+            </td>
+            <td *ngIf="isLogged">
+                <button routerLink="/editskill/{{Skill.id}}"><i class="bi bi-pencil-fill"></i>Editar</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button id="btn-borrar" (click)="onDeleteSkill(Skill.id)"><i class="bi bi-x"></i>Eliminar</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br/>
+    <div>
+        <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+    
+  </div>
+
+
+
+<div class="container mt-4" *ngFor="let Skill of skillsLista">
+    <div class="card">
+      <div class="card-body">Basic card</div>
+        <circle-progress
+        imageSrc= "{{Skill.img}}"
+        [showImage]="true"
+        [imageHeight]="105"
+        [imageWidth]="105"
+        [percent]= "Skill.percent"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'orange'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+    </div>
+  </div>
+
+
+
+<div class="container mt-3" *ngFor="let Skill of skillsLista">
+    <h2>Card Image</h2>
+    <p>Image at the top (card-img-top):</p>
+    <div class="card" style="width:400px">
+      <div class="" style="width:100%">
+        <circle-progress
+        imageSrc= "{{Skill.img}}"
+        [showImage]="true"
+        [imageHeight]="105"
+        [imageWidth]="105"
+        [percent]= "Skill.percent"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'orange'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="600"
+        ></circle-progress>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    <br>
+  
+  </div>
+
+-->
+
+<h2>Habilidades</h2>
+<br/>
+
+<div class="margenes" id="skills">
+  <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+    <div class="row" id="skillRow">
+      <div class="col" *ngFor="let skill of skillsLista">
+        <div class="card text-center bg-transparent" style="width:300px">
+          <div class="circulito" style="width:100%">
+            <circle-progress
+            imageSrc= "{{skill.img}}"
+            [showImage]="true"
+            [imageHeight]="105"
+            [imageWidth]="105"
+            [percent]= "skill.percent"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'orange'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"
+            ></circle-progress>
+          </div>
+          <div class="card-body">
+            <h4>{{skill.nombreSkill}}</h4>
+            <p>{{skill.descripcionSkill}}</p>
+          </div>
+      </div>
+      <button class="btn btn-primary" routerLink="/editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+      <button class="btn btn-danger" (click)="onDeleteSkill(skill.id)" *ngIf="isLogged"><i class="bi bi-x"></i></button>
+    </div>
+</div>
+
+<br/>
+<div>
+  <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+</div>
+
+

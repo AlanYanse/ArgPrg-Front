@@ -1,3 +1,4 @@
+<!--
 <div class="container">
 
         <div>
@@ -15,3 +16,21 @@
         </div>
 
 </div>
+
+-->
+
+<div class="container mt-3">
+    <h2>Nueva Educación</h2>
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+      <div class="mb-3 mt-3">
+        <label for="nombreE">Nombre de la institución</label>
+        <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required="">
+      </div>
+      <div class="mb-3">
+        <label for="descripcionE">Descripción</label>
+        <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required="">
+      </div>
+      <br/>
+      <button class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
