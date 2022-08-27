@@ -21,7 +21,7 @@
 
 -->
 
-<h2>Prácticas y Proyectos</h2>
+<h2 class="h1-responsive font-weight-bold text-center my-4">Prácticas y Proyectos</h2>
 <br/>
 
 <div class="margenes" id="proyectos">
@@ -35,7 +35,7 @@
             <div class="card-body">
               <h5 class= "card-title">{{proyecto.nombreProyecto}}</h5>
               <p class="card-text">{{proyecto.descripcionProyecto}}</p>
-              <a href="#" class="btn btn-outline-dark">ver más</a>
+              <a href={{proyecto.enlace}} class="btn btn-outline-dark">ver más</a>
             </div>
           </div>
       <button class="btn btn-primary" routerLink="/editproyecto/{{proyecto.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
