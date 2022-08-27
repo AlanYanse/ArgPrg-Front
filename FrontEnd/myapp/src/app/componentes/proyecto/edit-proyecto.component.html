@@ -1,7 +1,8 @@
-<div class="container" *ngIf="proyecto">
-    
-    <div>
-        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+<div class="container mt-4" *ngIf="proyecto">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Editar proyecto</h2>
+    <div class="d-flex flex-row justify-content-center alig-items-center">
+
+        <form class="formulario" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <div class="form-group">
                 <label for="nombreProyecto">Nombre del proyecto</label>
                 <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" [(ngModel)]="proyecto.nombreProyecto" required="">
@@ -14,9 +15,15 @@
                 <label for="imagen">Url de la imagen</label>
                 <input type="text" class="form-control" id="imagen" name="imagen" [(ngModel)]="proyecto.imagen" required="">
             </div>
+            <div class="mb-3">
+                <label for="enlace">Url del Enlace</label>
+                <input type="text" class="form-control" id="enlace" name="enlace" required="">
+            </div>
             <br/>
             <button class="btn btn-primary">Actualizar</button>
         </form>
+
     </div>
+    
 
 </div>
