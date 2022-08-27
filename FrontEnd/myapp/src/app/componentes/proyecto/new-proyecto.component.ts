@@ -23,10 +23,10 @@ export class NewProyectoComponent implements OnInit {
     const proyectosLista = new Proyecto(this.nombreProyecto, this.descripcionProyecto, this.imagen);
     this.sProyectoService.save(proyectosLista).subscribe(data =>{
       alert("Proyecto añadido");
-      this.router.navigate([""]);
+      this.router.navigate(["proyectos"]);
     }, err =>{
       alert("Falló");
-      this.router.navigate([""]);
+      this.router.navigate(["proyectos"]);
     })
   }
 
