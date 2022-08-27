@@ -21,17 +21,17 @@ export class EditProyectoComponent implements OnInit {
       this.proyecto = data;
     }, err =>{
       alert("Error al modificar el proyecto");
-      this.router.navigate([""]);
+      this.router.navigate(["proyectos"]);
     })
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params["id"];
     this.sProyectoService.update(id, this.proyecto).subscribe(data =>{
-      this.router.navigate([""]);
+      this.router.navigate(["proyectos"]);
     }, err =>{
       alert("Error al modificar el proyecto");
-      this.router.navigate([""]);
+      this.router.navigate(["proyectos"]);
     })
   }
 
