@@ -1,42 +1,40 @@
-<!--Section: Contact v.2-->
+<!--
 <section class="mb-4">
 
-    <!--Section heading-->
+    
     <h2 class="h1-responsive font-weight-bold text-center my-4"></h2>
-    <!--Section description-->
+    
     <p class="text-center w-responsive mx-auto mb-5">Por favor deja tu mensaje y será respondido a la brevedad</p>
 
-    <div class="row">
+    <div class="container">
 
-        <!--Grid column-->
+       
         <div class="col-md-9 mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" action="https://formsubmit.co/yansealan@gmail.com" method="POST">
 
-                <!--Grid row-->
+                
                 <div class="row">
 
-                    <!--Grid column-->
+                    
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">nombre</label>
                         </div>
                     </div>
-                    <!--Grid column-->
+                    
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">email</label>
-                        </div>
+                    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
-                    <!--Grid column-->
+                    
 
                 </div>
-                <!--Grid row-->
+                
 
-                <!--Grid row-->
+                
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
@@ -45,12 +43,12 @@
                         </div>
                     </div>
                 </div>
-                <!--Grid row-->
+                
 
-                <!--Grid row-->
+                
                 <div class="row">
 
-                    <!--Grid column-->
+                    
                     <div class="col-md-12">
 
                         <div class="md-form">
@@ -60,7 +58,7 @@
 
                     </div>
                 </div>
-                <!--Grid row-->
+                
 
             </form>
 
@@ -69,9 +67,9 @@
             </div>
             <div class="status"></div>
         </div>
-        <!--Grid column-->
+        
 
-        <!--Grid column-->
+        
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -87,9 +85,60 @@
                 </li>
             </ul>
         </div>
-        <!--Grid column-->
+       
 
     </div>
 
 </section>
-<!--Section: Contact v.2-->
+-->
+
+<div class="container">
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4"></h2>
+    
+    <p class="text-center w-responsive mx-auto mb-5">Por favor deja tu mensaje y será respondido a la brevedad</p>
+
+    <div class="d-flex flex-row justify-content-center alig-items-center">
+        <form class="formulario" id="contact-form" name="contact-form" action="https://formsubmit.co/yansealan@gmail.com" method="POST">
+            <div class="">
+                <label for="name" class="">Nombre</label>
+                <input type="text" id="name" name="name" class="form-control">
+            </div>
+            <div class="">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email">              
+            </div>
+            <div class="">
+                <label for="subject" class="">Asunto</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+            </div>
+            <div class="">
+                <label for="message" class="">Mensaje</label> 
+                <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>         
+            </div>
+            <div class="text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div> 
+            
+        </form>
+        
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p></p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p><i class="bi bi-whatsapp"></i><a href="#"> 3413134487</a></p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p><i class="bi bi-envelope"></i><a href="#"> yansealan@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+
