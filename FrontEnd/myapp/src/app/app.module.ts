@@ -9,10 +9,8 @@ import { ButtonComponent } from './componentes/button/button.component'; // Lo i
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';  // Lo importó directamente vsc
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './componentes/about/about.component';
-import { FooterComponent } from './componentes/footer/footer.component';
 import { LogoApComponent } from './componentes/logo-ap/logo-ap.component';
 import { SocialMediaComponent } from './componentes/social-media/social-media.component';
-import { BannerComponent } from './componentes/banner/banner.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { SkillComponent } from './componentes/skill/skill.component';
@@ -26,7 +24,6 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
-import { SidenavComponent } from './componentes/sidenav/sidenav.component';
 import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
 import { NewSkillComponent } from './componentes/skill/new-skill.component';
 import { EditSkillComponent } from './componentes/skill/edit-skill.component';
@@ -46,11 +43,9 @@ import { FormContactComponent } from './componentes/form-contact/form-contact.co
     AppComponent,
     HeaderComponent, // Lo registró automáticamente vsc
     ButtonComponent, // Lo registró automáticamente vsc
-    AboutComponent, 
-    FooterComponent, 
+    AboutComponent,  
     LogoApComponent, 
-    SocialMediaComponent, 
-    BannerComponent, 
+    SocialMediaComponent,  
     ExperienciaComponent, 
     EducacionComponent, 
     SkillComponent,  
@@ -60,13 +55,13 @@ import { FormContactComponent } from './componentes/form-contact/form-contact.co
     EditExperienciaComponent, 
     NewEducacionComponent, 
     EditEducacionComponent, 
-    SidenavComponent, 
     MenuBarComponent, 
     NewSkillComponent, 
     EditSkillComponent, 
     ProyectoComponent, 
     NewProyectoComponent, 
-    EditProyectoComponent, FormContactComponent // Lo registró automáticamente vsc
+    EditProyectoComponent, 
+    FormContactComponent // Lo registró automáticamente vsc
     
   ],
   imports: [

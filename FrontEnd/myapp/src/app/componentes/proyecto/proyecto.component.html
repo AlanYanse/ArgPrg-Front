@@ -1,25 +1,4 @@
-<!--
-<h1>Proyectos</h1>
-<div>
-    <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">Nuevo Proyecto</button>
-</div>
-<table class="table">
-        
-    <tr *ngFor="let Proyecto of proyectosLista">
-        <td><h3>{{Proyecto.nombreProyecto}}</h3></td>
-        <td>{{Proyecto.descripcionProyecto}}</td>
-        <td><img src="{{Proyecto.imagen}}"></td>
-        <td *ngIf="isLogged">
-            <button routerLink="/editproyecto/{{Proyecto.id}}"><i class="bi bi-pencil-fill"></i>Editar</button>
-        </td>
-        <td *ngIf="isLogged">
-            <button id="btn-borrar" (click)="onDeleteProyectos(Proyecto.id)"><i class="bi bi-x"></i>Eliminar</button>
-        </td>
-    </tr>
-        
-</table>
 
--->
 
 <h2 class="h1-responsive font-weight-bold text-center my-4">Prácticas y Proyectos</h2>
 <br/>
