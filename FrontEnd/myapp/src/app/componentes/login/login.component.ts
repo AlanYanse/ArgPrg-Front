@@ -33,15 +33,21 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(): void{
+      
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(data =>{
-      this.isLogged = true;
-      this.isLogginFail = false;
-      this.tokenService.setToken(data.token);
-      this.tokenService.setUserName(data.nombreUsuario);
-      this.tokenService.setAuthorities(data.authorities);
-      this.roles = data.authorities;
-      this.router.navigate([""])
+    this.isLogged = true;
+    this.isLogginFail = false;
+    this.tokenService.setToken(data.token);
+    this.tokenService.setUserName(data.nombreUsuario);
+    this.tokenService.setAuthorities(data.authorities);
+    this.roles = data.authorities;
+    this.router.navigate([""]).then(() => { // Con esta promesa se recarga la página luego de navegar al home
+      window.location.reload();
+    });
+    
+      
+      
     }, err =>{
       this.isLogged = false;
       this.isLogginFail = true;
@@ -49,7 +55,11 @@ export class LoginComponent implements OnInit {
       console.log(this.errMsj);
       
     })
-  
+
+    //this.isLogged = true;
+    //window.location.reload();
+    //alert("logiado con éxito");
+    //this.router.navigate([""]);
   
   }
 
