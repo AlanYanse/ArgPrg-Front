@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Nueva Habilidad</h2>
+    <div class="d-flex flex-row justify-content-center alig-items-center">
+        
+        <form class="formulario" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="mb-3 mt-3">
+                <label for="nombreSkill">Nombre de la Habilidad</label>
+                <input type="text" class="form-control" id="nombreSkill" name="nombreE" [(ngModel)]="nombreSkill" required="">
+            </div>
+            <div class="mb-3 ">
+                <label for="descripcionSkill">Descripción de la Habilidad</label>
+                <input type="text" class="form-control" id="descripcionSkill" name="descripcionSkill" [(ngModel)]="descripcionSkill" required="">
+            </div>
+            <div class="mb-3 ">
+                <label for="img">url de la imagen</label>
+                <input type="text" class="form-control" id="img" name="img" [(ngModel)]="img" required="">
+            </div>
+            <div class="mb-3 ">
+                <label for="colorBarrita">Color de la barrita</label>
+                <input type="text" class="form-control" id="colorBarrita" name="colorBarrita" [(ngModel)]="colorBarrita" required="">
+            </div>
+            <div class="mb-3 ">
+                <label for="percent">Nivel de la Habilidad</label>
+                <input type="text" class="form-control" id="percent" name="percent" [(ngModel)]="percent" required="">
+            </div>
+            <br/>
+            <button class="btn btn-primary">Agregar Skill</button>
+        </form>
+    
+        
+    </div>
+    
+</div>

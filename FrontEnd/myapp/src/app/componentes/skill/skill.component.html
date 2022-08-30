@@ -1,0 +1,44 @@
+
+
+<h2 class="h1-responsive font-weight-bold text-center my-4">Habilidades</h2>
+<br/>
+
+<div class="margenes" id="skills">
+  <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+    <div class="row" id="skillRow">
+      <div class="col" *ngFor="let skill of skillsLista">
+        <div class="card text-center bg-transparent" style="width:300px">
+          <div class="circulito" style="width:100%">
+            <circle-progress
+            imageSrc= "{{skill.img}}"
+            [showImage]="true"
+            [imageHeight]="105"
+            [imageWidth]="105"
+            [percent]= "skill.percent"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            outerStrokeColor="{{skill.colorBarrita}}"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"
+            ></circle-progress>
+          </div>
+          <div class="card-body">
+            <h4>{{skill.nombreSkill}}</h4>
+            <p>{{skill.descripcionSkill}}</p>
+          </div>
+      </div>
+      <button class="btn btn-primary" routerLink="/editskill/{{skill.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+      <button class="btn btn-danger" (click)="onDeleteSkill(skill.id)" *ngIf="isLogged"><i class="bi bi-x"></i></button>
+    </div>
+</div>
+
+<br/>
+<div>
+  <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+</div>
+
+

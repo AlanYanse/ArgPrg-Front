@@ -21,17 +21,17 @@ export class EditEducacionComponent implements OnInit {
       this.educacion = data;
     }, err =>{
       alert("Error al modificar la educacion");
-      this.router.navigate([""]);
+      this.router.navigate(["edu"]);
     })
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params["id"];
     this.sEducacion.update(id, this.educacion).subscribe(data =>{
-      this.router.navigate([""]);
+      this.router.navigate(["edu"]);
     }, err =>{
       alert("Error al modificar la educación");
-      this.router.navigate([""]);
+      this.router.navigate(["edu"]);
     })
   }
 }

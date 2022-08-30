@@ -26,12 +26,13 @@ export class ButtonComponent implements OnInit {
   login(): void{
 
     this.router.navigate(["/login"]);
-
+      
   }
 
   onLogOut(): void{
     this.tokenService.logOut();
     window.location.reload();
+    
   }
 
 }

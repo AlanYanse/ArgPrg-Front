@@ -1,0 +1,28 @@
+
+
+<h2 class="h1-responsive font-weight-bold text-center my-4">Prácticas y Proyectos</h2>
+<br/>
+
+<div class="margenes" id="proyectos">
+  <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+    <div class="row" id="proyectosRow">
+      <div class="col" *ngFor="let proyecto of proyectosLista">
+        <div class="card text-center bg-transparent" style="width: 18rem;">
+            <img src={{proyecto.imagen}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class= "card-title">{{proyecto.nombreProyecto}}</h5>
+              <p class="card-text">{{proyecto.descripcionProyecto}}</p>
+              <a href={{proyecto.enlace}} class="btn btn-outline-dark">ver más</a>
+            </div>
+          </div>
+      <button class="btn btn-primary" routerLink="/editproyecto/{{proyecto.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
+      <button class="btn btn-danger" (click)="onDeleteProyectos(proyecto.id)" *ngIf="isLogged"><i class="bi bi-x"></i></button>
+    </div>
+</div>
+
+<br/>
+<div>
+  <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">Nuevo Proyecto</button>
+</div>

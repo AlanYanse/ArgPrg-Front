@@ -1,24 +1,4 @@
-#titulo{
-    margin-bottom: 5px;
-    text-align: center;
-}
 
-h3, h4{
-    display: inline;
-    margin-bottom: 5px;
-}
-
-h3{
-    margin-right: 10px;
-}
-
-li{
-    padding: 10px;
-}
-
-td{
-    padding: 50px;
-}
 
 #btn-borrar{
     background-color: red;

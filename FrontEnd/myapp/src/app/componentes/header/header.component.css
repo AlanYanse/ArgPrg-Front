@@ -1,3 +1,5 @@
+
+/*
 header{
     background-color: #a1b5cb;
     display: flex;
@@ -12,3 +14,80 @@ app-logo-ap{
 app-social-media {
     margin-right: 10px;
 }
+*/
+
+/*
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    margin-right: 0.5em;
+}
+
+img{
+    width: 50px;
+}
+
+/* --- Para el responsivo --- */
+
+/*
+
+@media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.2em;
+    }
+}
+
+
+
+.contenedor{
+    width: 100%;
+    background-color: #a1b5cb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+app-logo-ap{
+    margin-right: auto;
+}
+
+app-button{
+    margin-right: 20px;
+}
+
+*/
+
+.cajita1{
+    /*width: 100%;*/
+    background-color: #a1b5cb;
+}
+
+
+.cajita2{
+    width: 100%;
+    background-color: #a1b5cb;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+app-button{
+    margin-right: 20px;
+}
+
+
+
+

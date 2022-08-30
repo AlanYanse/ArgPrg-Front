@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/*
 
 @font-face {
     font-family: 'Poppins';
@@ -81,4 +82,14 @@ body{
 .form-control-check input {
     flex: 2;
     height: 20px;
+}
+
+*/
+
+body{
+    background-color: #c4cdd8;
+}
+
+.formulario{
+    width: 70%;
 }

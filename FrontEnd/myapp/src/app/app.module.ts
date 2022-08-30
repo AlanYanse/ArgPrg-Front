@@ -9,15 +9,12 @@ import { ButtonComponent } from './componentes/button/button.component'; // Lo i
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';  // Lo importó directamente vsc
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './componentes/about/about.component';
-import { FooterComponent } from './componentes/footer/footer.component';
 import { LogoApComponent } from './componentes/logo-ap/logo-ap.component';
 import { SocialMediaComponent } from './componentes/social-media/social-media.component';
-import { BannerComponent } from './componentes/banner/banner.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
+import { SkillComponent } from './componentes/skill/skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +24,15 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { MenuBarComponent } from './componentes/menu-bar/menu-bar.component';
+import { NewSkillComponent } from './componentes/skill/new-skill.component';
+import { EditSkillComponent } from './componentes/skill/edit-skill.component';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.component';
+import { FormContactComponent } from './componentes/form-contact/form-contact.component';
+
+
 
 
 
@@ -37,17 +43,25 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
     AppComponent,
     HeaderComponent, // Lo registró automáticamente vsc
     ButtonComponent, // Lo registró automáticamente vsc
-    AboutComponent, 
-    FooterComponent, 
+    AboutComponent,  
     LogoApComponent, 
-    SocialMediaComponent, 
-    BannerComponent, 
+    SocialMediaComponent,  
     ExperienciaComponent, 
     EducacionComponent, 
-    SkillsComponent, 
-    ProyectosComponent, 
+    SkillComponent,  
     HomeComponent, 
-    LoginComponent, NewExperienciaComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent // Lo registró automáticamente vsc
+    LoginComponent, 
+    NewExperienciaComponent, 
+    EditExperienciaComponent, 
+    NewEducacionComponent, 
+    EditEducacionComponent, 
+    MenuBarComponent, 
+    NewSkillComponent, 
+    EditSkillComponent, 
+    ProyectoComponent, 
+    NewProyectoComponent, 
+    EditProyectoComponent, 
+    FormContactComponent // Lo registró automáticamente vsc
     
   ],
   imports: [
